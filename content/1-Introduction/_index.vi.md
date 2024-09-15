@@ -54,3 +54,29 @@ Hình vẽ trên tổng quan về các thành phần cơ bản của Apache Airf
 * DAG Directory: một thư mục chứa các file DAG của các quy trình xử lý dữ liệu (data pipelines) trong Airflow.
 * Metabase Database: được sử dụng bởi Scheduler, Executor và Web Server để lưu trữ thông tin quan trọng của từng DAG, ví
   dụ như các phiên bản, số liệu thống kê mỗi lần chạy, khoảng thời gian lên lịch, ..
+
+## Kết nối Amazon Web Services
+
+Loại kết nối Amazon Web Services cho
+phép [tích hợp AWS](https://airflow.apache.org/docs/apache-airflow-providers/operators-and-hooks-ref/aws.html#aws).
+
+{{% notice note %}}
+Kết nối Amazon Web Services có thể được kiểm tra trong giao diện người dùng/API hoặc bằng cách gọi , Điều quan trọng là
+phải giải thích chính xác kết quả của thử nghiệm này. Trong quá trình thử nghiệm này, các thành phần của Amazon Provider
+gọi API AWS Security Token Service GetCallerIdentity. Dịch vụ này chỉ có thể kiểm tra xem thông tin đăng nhập của bạn có
+hợp lệ hay không. Rất tiếc, không thể xác thực xem thông tin xác thực có quyền truy cập vào dịch vụ AWS cụ thể hay
+không.
+
+Nếu bạn sử dụng Nhà cung cấp Amazon để giao tiếp với các dịch vụ tương thích API AWS (MinIO, LocalStack, v.v.) Kiểm tra
+kết nối không có nghĩa là kết nối của bạn có thông tin đăng nhập sai. Nhiều dịch vụ tương thích chỉ cung cấp một số
+lượng hạn chế các dịch vụ API AWS, và hầu hết trong số họ không triển khai phương thức AWS STS [GetCallerIdentity](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetCallerIdentity.html)
+{{% /notice%}}
+
+### Xác thực với AWS
+
+Xác thực có thể được thực hiện bằng cách sử dụng bất kỳ tùy chọn nào được mô tả trong Boto3
+Guide [Credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html#guide-credentials).
+Ngoài ra, người ta có thể truyền thông tin đăng nhập dưới dạng tham số Connection initialisation.
+
+Để sử dụng cấu hình phiên bản IAM, hãy tạo kết nối “trống”  (i.e. không có AWS Access Key ID hoặc AWS Secret Access Key
+cụ thể, hoặc aws://)

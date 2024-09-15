@@ -53,3 +53,29 @@ Drawing on an overview of the basic components of Apache Airflow.
 * DAG Directory: a directory that contains the DAG files of data pipelines in Airflow.
 * Metabase Database: used by Scheduler, Executor, and Web Server to store important information of each DAG, e.g.
   versions, statistics per run, scheduling interval, etc.
+
+## Amazon Web Services Connection
+
+The Amazon Web Services connection type enables
+the [AWS Integrations](https://airflow.apache.org/docs/apache-airflow-providers/operators-and-hooks-ref/aws.html#aws).
+
+{{% notice note %}}
+The Amazon Web Services Connection can be tested in the UI/API or by calling test_connection(), it is important to
+correctly interpret the result of this test. During this test components of Amazon Provider invoke AWS Security Token
+Service API GetCallerIdentity. This service can only check if your credentials are valid. Unfortunately it is not
+possible to validate if credentials have access to specific AWS service or not.
+
+If you use the Amazon Provider to communicate with AWS API compatible services (MinIO, LocalStack, etc.) test connection
+failure doesn’t mean that your connection has wrong credentials. Many compatible services provide only a limited number
+of AWS API services, and most of them do not implement the AWS STS [GetCallerIdentity](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetCallerIdentity.html) method.
+{{% /notice%}}
+
+### Authenticating to AWS
+
+Authentication may be performed using any of the options described in Boto3
+Guide [Credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html#guide-credentials).
+Alternatively, one can
+pass credentials in as a Connection initialisation parameter.
+
+To use IAM instance profile, create an “empty” connection (i.e. one with no AWS Access Key ID or AWS Secret Access Key
+specified, or aws://)
