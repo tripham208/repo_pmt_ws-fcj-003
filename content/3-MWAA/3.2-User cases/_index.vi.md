@@ -3,7 +3,7 @@ title: "MWAA: Trường hợp sử dụng"
 date: "`r Sys.Date()`"
 weight: 1
 chapter: false
-pre: " <b> 4.1 </b> "
+pre: " <b> 3.2 </b> "
 ---
 
 ## [MWAA](https://aws.amazon.com/vi/managed-workflows-for-apache-airflow/): Trường hợp sử dụng
