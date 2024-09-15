@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 3.2.1 </b> "
 ---
 
-# Chuyển dữ liệu từ Amazon S3 sang Redshift
-
 ## 1. Tổng quan
 
 Trong dự án này, chúng tôi sẽ xây dựng quy trình ETL cho cơ sở dữ liệu được lưu trữ trên Redshift. Chúng ta sẽ tải dữ

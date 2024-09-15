@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Running Airflow Locally
 
 Now that you have a basic understanding of Airflow. In this section, you will learn the steps for Running Airflow
 Locally, there are a few prerequisites that you need to know about. For starters, you’re going to need some basic

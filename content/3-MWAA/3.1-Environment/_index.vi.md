@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 3.1 </b> "
 ---
 
-# Tạo môi trường MVAA
+## Tạo môi trường MVAA
 
 1. Tạo S3 bucket chứa tài nguyên
     - Truy cập [bảng điều khuyển S3](https://us-east-1.console.aws.amazon.com/s3/home?region=us-east-1#)

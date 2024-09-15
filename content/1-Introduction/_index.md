@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-# Introduction
-
 ## What is Apache AirFlow?
 
 [Apache Airflow®](https://airflow.apache.org/) is a platform created by the community to programmatically author,

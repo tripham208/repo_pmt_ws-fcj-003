@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-# Giới thiệu
-
 ## Apache AirFlow là gì?
 
 [Apache Airflow®](https://airflow.apache.org/)  là một công cụ mã nguồn mở để lập trình, lập lịch và giám sát quy trình

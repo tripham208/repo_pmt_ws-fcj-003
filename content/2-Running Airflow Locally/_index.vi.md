@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Chạy Airflow cục bộ
 
 Bây giờ bạn đã có hiểu biết cơ bản về Airflow. Trong phần này, bạn sẽ tìm hiểu các bước để Chạy luồng khí cục bộ, có một
 số điều kiện tiên quyết mà bạn cần biết. Để bắt đầu, bạn sẽ cần một số kiến thức cơ bản về Python, Bash và Git.

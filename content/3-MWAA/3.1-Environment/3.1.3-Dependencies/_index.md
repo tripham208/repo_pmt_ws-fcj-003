@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 3.1.3 </b> "
 ---
 
-# Prerequisites
+## Prerequisites
 
 You'll need the following before you can complete the steps on this page.
 
@@ -24,7 +24,7 @@ You'll need the following before you can complete the steps on this page.
   custom plugins in plugins.zip, and Python
   dependencies in requirements.txt must be configured with Public Access Blocked and Versioning Enabled.
 
-# How it works
+## How it works
 
 On Amazon MWAA, you install all Python dependencies by uploading a requirements.txt file to your Amazon S3 bucket, then
 specifying the version of the file on the Amazon MWAA console each time you update the file. Amazon MWAA runs `pip3
@@ -36,12 +36,12 @@ To run Python dependencies on your environment, you must do three things:
 2. Upload the local `requirements.txt`to your Amazon S3 bucket.
 3. Specify the version of this file in the **Requirements file** field on the Amazon MWAA console.
 
-# Python dependencies overview
+## Python dependencies overview
 
 You can install Apache Airflow extras and other Python dependencies from the Python Package Index (PyPi.org), Python
 wheels (.whl), or Python dependencies hosted on a private PyPi/PEP-503 Compliant Repo on your environment.
 
-## Python dependencies location and size limits
+### Python dependencies location and size limits
 
 The Apache Airflow Scheduler and the Workers look for the packages in the requirements.txt file and the packages are
 installed on the environment at `/usr/local/airflow/.local/bin`.
@@ -51,12 +51,12 @@ installed on the environment at `/usr/local/airflow/.local/bin`.
   doesn't limit the size of installed libraries explicitly, if dependencies can't be installed within ten minutes, the
   Fargate service will time-out and attempt to rollback the environment to a stable state.
 
-# Installing Python dependencies on your environment
+## Installing Python dependencies on your environment
 
 This section describes how to install the dependencies you uploaded to your Amazon S3 bucket by specifying the path to
 the requirements.txt file, and specifying the version of the requirements.txt file each time it's updated.
 
-## Specifying the path to requirements.txt on the Amazon MWAA console (the first time)
+### Specifying the path to requirements.txt on the Amazon MWAA console (the first time)
 
 If this is the first time you're creating and uploading a requirements.txt to your Amazon S3 bucket, you also need to
 specify the path to the file on the Amazon MWAA console. You only need to complete this step once.
@@ -72,7 +72,7 @@ specify the path to the file on the Amazon MWAA console. You only need to comple
 
 You can begin using the new packages immediately after your environment finishes updating.
 
-## Specifying the requirements.txt version on the Amazon MWAA console
+### Specifying the requirements.txt version on the Amazon MWAA console
 
 You need to specify the version of your requirements.txt file on the Amazon MWAA console each time you upload a new
 version of your requirements.txt in your Amazon S3 bucket.
@@ -86,7 +86,7 @@ version of your requirements.txt in your Amazon S3 bucket.
 
 You can begin using the new packages immediately after your environment finishes updating.
 
-# Viewing logs for your requirements.txt
+## Viewing logs for your requirements.txt
 
 You can view Apache Airflow logs for the _Scheduler_ scheduling your workflows and parsing your dags folder. The
 following

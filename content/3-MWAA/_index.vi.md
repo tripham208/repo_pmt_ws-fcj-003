@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-## Amazon Managed Workflows for Apache Airflow
 
 [Amazon Managed Workflows for Apache Airflow](https://aws.amazon.com/vi/managed-workflows-for-apache-airflow/) Điều phối
 quy trình làm việc được quản lý an toàn và có độ sẵn sàng cao cho Apache Airflow

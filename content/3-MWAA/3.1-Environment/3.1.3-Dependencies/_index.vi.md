@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 3.1.3 </b> "
 ---
 
-# Điều kiện tiên quyết
+## Điều kiện tiên quyết
 
 Bạn sẽ cần những điều sau đây trước khi có thể hoàn tất các bước trên trang này.
 
@@ -25,7 +25,7 @@ Bạn sẽ cần những điều sau đây trước khi có thể hoàn tất c�
   sử dụng để lưu trữ DAG, các plugin tùy chỉnh trong plugins.zip và các phụ thuộc Python trong requirements.txt phải
   được cấu hình với Public Access Blocked và Versioning Enabled.
 
-# Cách thức hoạt động
+## Cách thức hoạt động
 
 Trên Amazon MWAA, bạn cài đặt tất cả các phụ thuộc Python bằng cách tải tệp requirements.txt lên thùng Amazon S3 của
 mình, sau đó chỉ định phiên bản của tệp trên bảng điều khiển Amazon MWAA mỗi lần bạn cập nhật tệp. Amazon MWAA chạy `pip3
@@ -43,7 +43,7 @@ Bạn có thể cài đặt các phần bổ sung của Apache Airflow và các 
 PyPi.org), Python wheels ( .whl) hoặc các phần phụ thuộc Python được lưu trữ trên PyPi/PEP-503 Compliant Repo riêng trên
 môi trường của bạn.
 
-## Vị trí phụ thuộc Python và giới hạn kích thước
+### Vị trí phụ thuộc Python và giới hạn kích thước
 
 Trình lập lịch Apache Airflow và Workers tìm kiếm các gói trong requirements.txttệp và các gói này được cài đặt trên môi
 trường tại `/usr/local/airflow/.local/bin`.
@@ -54,11 +54,11 @@ trường tại `/usr/local/airflow/.local/bin`.
   thuộc trong vòng mười phút, dịch vụ Fargate sẽ hết thời gian chờ và cố gắng khôi phục môi trường về trạng thái ổn
   định.
 
-# Cài đặt các phụ thuộc Python vào môi trường của bạn
+## Cài đặt các phụ thuộc Python vào môi trường của bạn
 
 Phần này mô tả cách cài đặt các phụ thuộc mà bạn đã tải lên thùng Amazon S3 của mình bằng cách chỉ định đường dẫn đến tệp requirements.txt và chỉ định phiên bản của tệp requirements.txt mỗi khi tệp được cập nhật.
 
-## Chỉ định đường dẫn đến requirements.txtbảng điều khiển Amazon MWAA (lần đầu tiên)
+### Chỉ định đường dẫn đến requirements.txtbảng điều khiển Amazon MWAA (lần đầu tiên)
 
 Nếu đây là lần đầu tiên bạn tạo và tải tệp requirements.txtlên thùng Amazon S3, bạn cũng cần chỉ định đường dẫn đến tệp trên bảng điều khiển Amazon MWAA. Bạn chỉ cần hoàn tất bước này một lần.
 
@@ -72,7 +72,7 @@ Nếu đây là lần đầu tiên bạn tạo và tải tệp requirements.txtl
 
 Bạn có thể bắt đầu sử dụng các gói mới ngay sau khi môi trường của bạn hoàn tất việc cập nhật.
 
-## Chỉ định requirements.txtphiên bản trên bảng điều khiển Amazon MWAA
+### Chỉ định requirements.txtphiên bản trên bảng điều khiển Amazon MWAA
 
 Bạn cần chỉ định phiên bản requirements.txttệp của mình trên bảng điều khiển Amazon MWAA mỗi khi tải phiên bản mới của tệp requirements.txtlên thùng Amazon S3.
 
@@ -84,7 +84,7 @@ Bạn cần chỉ định phiên bản requirements.txttệp của mình trên b
 
 Bạn có thể bắt đầu sử dụng các gói mới ngay sau khi môi trường của bạn hoàn tất việc cập nhật.
 
-# Xem nhật ký cho  requirements.txt
+## Xem nhật ký cho  requirements.txt
 
 Bạn có thể xem nhật ký Apache Airflow cho Scheduler để lập lịch cho quy trình làm việc của bạn và phân tích thư mục của bạn dags. Các bước sau đây mô tả cách mở nhóm nhật ký cho Scheduler trên bảng điều khiển Amazon MWAA và xem nhật ký Apache Airflow trên bảng điều khiển CloudWatch Logs.
 

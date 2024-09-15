@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 4.1 </b> "
 ---
 
-# Điều kiện tiên quyết
+## Điều kiện tiên quyết
 
 Bạn sẽ cần những điều sau đây trước khi có thể hoàn tất các bước trên trang này.
 
@@ -23,7 +23,7 @@ các plugin tùy chỉnh trong plugins.zip và các phụ thuộc Python
 trong requirements.txt phải được cấu hình với Public Access Blocked và Versioning Enabled.
 
 
-# Cách thức hoạt động
+## Cách thức hoạt động
 
 Một Đồ thị không có chu trình có hướng (DAG) được định nghĩa trong một tệp Python duy nhất định nghĩa cấu trúc của DAG dưới dạng mã. Nó
 bao gồm các nội dung sau:
@@ -51,12 +51,12 @@ container sau mỗi 30 giây, bảo toàn hệ thống phân cấp tệp của n
 bất kể loại tệp nào. Thời gian DAG mới xuất hiện trong Giao diện người dùng Apache Airflow của bạn được kiểm soát bởi
 **scheduler.dag_dir_list_interval**. Các thay đổi đối với DAG hiện có sẽ được chọn trong vòng lặp xử lý DAG tiếp theo.
 
-# Tải mã DAG lên Amazon S3
+## Tải mã DAG lên Amazon S3
 
 Bạn có thể sử dụng bảng điều khiển Amazon S3 hoặc Giao diện dòng lệnh AWS (AWS CLI) để tải mã DAG lên thùng Amazon S3
 của mình. Các bước sau đây giả định rằng bạn đang tải mã (.py) lên thư mục có tên dags trong thùng Amazon S3 của mình.
 
-# Xem các thay đổi trên Giao diện người dùng Apache Airflow
+## Xem các thay đổi trên Giao diện người dùng Apache Airflow
 
 Đăng nhập vào Apache Airflow
 Bạn

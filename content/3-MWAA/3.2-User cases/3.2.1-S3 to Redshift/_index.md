@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 3.2.1 </b> "
 ---
 
-# Transfer Data from Amazon S3 to Redshift
-
 ## 1. Introduction
 
 In this module, we will build an ETL pipeline for a database hosted on Redshift. We'll load data from S3 to staging

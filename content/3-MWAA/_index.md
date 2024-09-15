@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Amazon Managed Workflows for Apache Airflow
 
 [Amazon Managed Workflows for Apache Airflow](https://aws.amazon.com/vi/managed-workflows-for-apache-airflow/) Secure
 and highly available managed workflow orchestration for Apache Airflow

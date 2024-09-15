@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4.1 </b> "
 ---
 
-# MWAA: User cases
+## MWAA: User cases
 
 [MWAA](https://aws.amazon.com/vi/managed-workflows-for-apache-airflow/) can be used for a wide variety of purposes
 including data processing, machine learning, microservice orchestration, IT and security automation, high performance

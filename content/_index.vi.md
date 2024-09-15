@@ -25,5 +25,5 @@ quy trình làm việc được quản lý an toàn và có tính sẵn sàng ca
 #### Nội dung
 
 1. [Giới thiệu](1-Introduction/)
-2. [Airflow Localhost](2-Airflow Localhost/)
+2. [Running Airflow Locally](2-Running Airflow Locally/)
 3. [Amazon Managed Workflows for Apache Airflow](3-MWAA/)

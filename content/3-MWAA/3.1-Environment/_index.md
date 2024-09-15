@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 3.1 </b> "
 ---
 
-# Create MVAA Environment
+## Create MVAA Environment
 
 1. Create S3 bucket containing resources
 

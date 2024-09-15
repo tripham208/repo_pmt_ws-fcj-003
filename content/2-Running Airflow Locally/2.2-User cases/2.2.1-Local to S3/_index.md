@@ -6,8 +6,6 @@ chapter : false
 pre : " <b> 2.2.1 </b> "
 ---
 
-# Transfer Data from Amazon S3 to Redshift
-
 ## 1. Introduction
 
 In this example we will upload files(eg: [data_sample_240101](/repo_pmt_ws-fcj-003/resources/data_sample_240101.zip)) from the local file system to Amazon S3 using Airflow running in Docker

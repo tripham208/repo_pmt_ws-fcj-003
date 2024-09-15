@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 3.1.1 </b> "
 ---
 
-# Prerequisites
+## Prerequisites
 
 You'll need the following before you can complete the steps on this page.
 
@@ -24,7 +24,7 @@ You'll need the following before you can complete the steps on this page.
   custom plugins in plugins.zip, and Python
   dependencies in requirements.txt must be configured with Public Access Blocked and Versioning Enabled.
 
-# How it works
+## How it works
 
 A Directed Acyclic Graph (DAG) is defined within a single Python file that defines the DAG's structure as code. It
 consists of the following:
@@ -52,12 +52,12 @@ containers’ /usr/local/airflow/dags folder every 30 seconds, preserving the Am
 regardless of file type. The time that new DAGs take to appear in your Apache Airflow UI is controlled by
 **scheduler.dag_dir_list_interval**. Changes to existing DAGs will be picked up on the next DAG processing loop.
 
-# Uploading DAG code to Amazon S3
+## Uploading DAG code to Amazon S3
 
 You can use the Amazon S3 console or the AWS Command Line Interface (AWS CLI) to upload DAG code to your Amazon S3
 bucket. The following steps assume you are uploading code (.py) to a folder named dags in your Amazon S3 bucket.
 
-# Viewing changes on your Apache Airflow UI
+## Viewing changes on your Apache Airflow UI
 
 Logging into Apache Airflow
 You

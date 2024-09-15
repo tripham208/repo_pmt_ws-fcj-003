@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 2.2.1 </b> "
 ---
 
-# Tải tệp từ hệ thống tệp cục bộ lên Amazon S3
-
 ## 1. Tổng quan
 
 Trong ví dụ này chúng ta sẽ tải tệp từ hệ thống tệp cục bộ(ví dụ: (
