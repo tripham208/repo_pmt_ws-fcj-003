@@ -1,5 +1,5 @@
 ---
-title : "Transfer Data from Amazon S3 to Redshift"
+title : "Upload files from the local file system to Amazon S3"
 date :  "`r Sys.Date()`"
 weight : 1
 chapter : false
