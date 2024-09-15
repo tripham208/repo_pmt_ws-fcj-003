@@ -64,7 +64,6 @@ The Amazon Web Services Connection can be tested in the UI/API or by calling tes
 correctly interpret the result of this test. During this test components of Amazon Provider invoke AWS Security Token
 Service API GetCallerIdentity. This service can only check if your credentials are valid. Unfortunately it is not
 possible to validate if credentials have access to specific AWS service or not.
-
 If you use the Amazon Provider to communicate with AWS API compatible services (MinIO, LocalStack, etc.) test connection
 failure doesn’t mean that your connection has wrong credentials. Many compatible services provide only a limited number
 of AWS API services, and most of them do not implement the AWS STS [GetCallerIdentity](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetCallerIdentity.html) method.

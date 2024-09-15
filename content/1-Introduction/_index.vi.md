@@ -66,10 +66,10 @@ phải giải thích chính xác kết quả của thử nghiệm này. Trong qu
 gọi API AWS Security Token Service GetCallerIdentity. Dịch vụ này chỉ có thể kiểm tra xem thông tin đăng nhập của bạn có
 hợp lệ hay không. Rất tiếc, không thể xác thực xem thông tin xác thực có quyền truy cập vào dịch vụ AWS cụ thể hay
 không.
-
 Nếu bạn sử dụng Nhà cung cấp Amazon để giao tiếp với các dịch vụ tương thích API AWS (MinIO, LocalStack, v.v.) Kiểm tra
 kết nối không có nghĩa là kết nối của bạn có thông tin đăng nhập sai. Nhiều dịch vụ tương thích chỉ cung cấp một số
-lượng hạn chế các dịch vụ API AWS, và hầu hết trong số họ không triển khai phương thức AWS STS [GetCallerIdentity](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetCallerIdentity.html)
+lượng hạn chế các dịch vụ API AWS, và hầu hết trong số họ không triển khai phương thức AWS
+STS [GetCallerIdentity](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetCallerIdentity.html)
 {{% /notice%}}
 
 ### Xác thực với AWS
