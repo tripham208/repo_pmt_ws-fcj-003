@@ -15,7 +15,7 @@ Their analytics team to continue finding insights into what songs their users ar
 
 ![Image](/repo_pmt_ws-fcj-003/images/3/2/1/321-01.png)
 
-## Source data
+### Source data
 
 Dataset stored in S3, the udacity-dend bucket is situated in the **us-west-2** region:
 
@@ -26,13 +26,13 @@ To properly read log data `s3://udacity-dend/log_data`, you'll need the followin
 
 * Log metadata: `s3://udacity-dend/log_json_path.json`
 
-## Data model
+### Data model
 
-### Staging tables
+#### Staging tables
 
 ![Image](/repo_pmt_ws-fcj-003/images/3/2/1/321-02.png)
 
-### Star schema tables
+#### Star schema tables
 
 From song and event dataset, we'll create a star schema optimized for queries on song play analysis. This following
 tables:
@@ -69,6 +69,23 @@ tables:
     - Download [create_tables.sql](/repo_pmt_ws-fcj-003/resources/create_tables.sql) and run it in Redshift
 
    ![Image](/repo_pmt_ws-fcj-003/images/3/2/1/321-12.png)
+3. Create IAM role with permission access S3
+4. Add connection to Redshift in MWAA
+    - Access [Airflow UI](https://us-east-1.console.aws.amazon.com/mwaa/home?region=us-east-1#environments)
+    - Add Connection
+
+        - Access **Admin/Connection** add connection to Redshift
+
+          ![Image](/repo_pmt_ws-fcj-003/images/3/2/1/321-13.png)
+
+          ![Image](/repo_pmt_ws-fcj-003/images/3/2/1/321-14.png)
+    - Add Variable
+
+        - Access **Admin/Variable** add Iam role Redshift use to access S3
+
+          ![Image](/repo_pmt_ws-fcj-003/images/3/2/1/321-15.png)
+
+          ![Image](/repo_pmt_ws-fcj-003/images/3/2/1/321-16.png)
 ## 3. Create Dag
 
 In the [DAG](/repo_pmt_ws-fcj-003/resources/s3_to_redshift.py), add default parameters according to these guidelines
@@ -267,7 +284,7 @@ class DataQualityOperator(BaseOperator):
 
 ## 5. Clean up
 
-1. [ ] Delete [Environment MWAA](../../3.1-Environment)
+1. [ ] Delete [Environment MWAA](../../3.1-Environment/#Clean-up)
 2. [ ] Delete Redshift
 
     - Delete IAM role

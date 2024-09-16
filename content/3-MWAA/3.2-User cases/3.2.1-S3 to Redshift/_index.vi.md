@@ -293,7 +293,7 @@ class DataQualityOperator(BaseOperator):
 
 ## 5. Dọn dẹp
 
-1. [ ] Xóa [môi trường MWAA](../../3.1-Environment)
+1. [ ] Xóa [môi trường MWAA](../../3.1-Environment/#Dọn-dẹp-tài-nguyên)
 2. [ ] Xóa Redshift
 
     - Xóa IAM role

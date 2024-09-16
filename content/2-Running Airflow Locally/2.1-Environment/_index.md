@@ -30,4 +30,4 @@ pre: " <b> 2.1 </b> "
 
     - There are a number of example dags present if enabled: **AIRFLOW__CORE__LOAD_EXAMPLES: 'true'**
 
-   ![Image](/repo_pmt_ws-fcj-003/images/2/1/21-02.png)
+   ![Image](/repo_pmt_ws-fcj-003/images/2/1/21-05.png)

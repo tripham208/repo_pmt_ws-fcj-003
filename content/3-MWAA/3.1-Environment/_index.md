@@ -3,7 +3,7 @@ title: "MWAA Environment"
 date: "`r Sys.Date()`"
 weight: 1
 chapter: false
-pre: " <b> 3.1 </b> "
+pre: " <b> 3.1. </b> "
 ---
 
 ## Create MVAA Environment
@@ -66,7 +66,7 @@ pre: " <b> 3.1 </b> "
     - Enable UI access from the internet
 
         -
-        Access [Airflow Security Group](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#SecurityGroups:)
+      Access [Airflow Security Group](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#SecurityGroups:)
 
         - Update Inbound rule
 
@@ -84,21 +84,21 @@ pre: " <b> 3.1 </b> "
 
       ![Image](/repo_pmt_ws-fcj-003/images/3/1/31-14.png)
 
-5. Clean up resources
+## Clean up
 
-    - Delete MWAA environment
+- Delete MWAA environment
 
-      ![Image](/repo_pmt_ws-fcj-003/images/3/1/31-15.png)
+  ![Image](/repo_pmt_ws-fcj-003/images/3/1/31-15.png)
 
-    - Delete VPC endpoint
+- Delete VPC endpoint
 
-      ![Image](/repo_pmt_ws-fcj-003/images/3/1/31-16.png)
+  ![Image](/repo_pmt_ws-fcj-003/images/3/1/31-16.png)
 
-    - Delete IAM role
+- Delete IAM role
 
-      ![Image](/repo_pmt_ws-fcj-003/images/3/1/31-17.png)
+  ![Image](/repo_pmt_ws-fcj-003/images/3/1/31-17.png)
 
-    - Delete Security Group
+- Delete Security Group
 
-      ![Image](/repo_pmt_ws-fcj-003/images/3/1/31-18.png)
-    - Delete S3 bucket
+  ![Image](/repo_pmt_ws-fcj-003/images/3/1/31-18.png)
+- Delete S3 bucket

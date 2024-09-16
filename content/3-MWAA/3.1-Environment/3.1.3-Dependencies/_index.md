@@ -1,7 +1,7 @@
 ---
 title: "MWAA Dependencies"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 3
 chapter: false
 pre: " <b> 3.1.3 </b> "
 ---

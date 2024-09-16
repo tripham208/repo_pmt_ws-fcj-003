@@ -3,7 +3,7 @@ title: "Môi trường MVAA"
 date: "`r Sys.Date()`"
 weight: 1
 chapter: false
-pre: " <b> 3.1 </b> "
+pre: " <b> 3.1. </b> "
 ---
 
 ## Tạo môi trường MVAA
@@ -66,18 +66,19 @@ pre: " <b> 3.1 </b> "
     - Vui lòng sử dụng **airflow** cho cả tên người dùng và mật khẩu
 
       ![Image](/repo_pmt_ws-fcj-003/images/3/1/31-14.png)
-5. Dọn dẹp tài nguyên
 
-    - Xóa môi trường MWAA
+## Dọn dẹp tài nguyên
 
-      ![Image](/repo_pmt_ws-fcj-003/images/3/1/31-15.png)
-    - Xóa VPC endpoint
+- Xóa môi trường MWAA
 
-      ![Image](/repo_pmt_ws-fcj-003/images/3/1/31-16.png)
-    - Xóa IAM role
+  ![Image](/repo_pmt_ws-fcj-003/images/3/1/31-15.png)
+- Xóa VPC endpoint
 
-      ![Image](/repo_pmt_ws-fcj-003/images/3/1/31-17.png)
-    - Xóa Security Group
-   
-      ![Image](/repo_pmt_ws-fcj-003/images/3/1/31-18.png)
-    - Xóa S3 bucket
+  ![Image](/repo_pmt_ws-fcj-003/images/3/1/31-16.png)
+- Xóa IAM role
+
+  ![Image](/repo_pmt_ws-fcj-003/images/3/1/31-17.png)
+- Xóa Security Group
+
+  ![Image](/repo_pmt_ws-fcj-003/images/3/1/31-18.png)
+- Xóa S3 bucket
