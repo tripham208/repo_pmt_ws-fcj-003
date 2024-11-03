@@ -27,5 +27,5 @@ managed workflow orchestration for Apache Airflow
 #### Content
 
 1. [Introduction](1-Introduction/)
-2. [Running Airflow Locally](2-Running Airflow Locally/)
+2. [Running Airflow Locally](2-running-airflow-locally/)
 3. [Amazon Managed Workflows for Apache Airflow](3-MWAA/)
