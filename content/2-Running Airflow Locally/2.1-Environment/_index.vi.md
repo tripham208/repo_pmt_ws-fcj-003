@@ -15,7 +15,7 @@ pre: " <b> 2.1 </b> "
     - [requirements.txt](/repo_pmt_ws-fcj-003/resources/requirements.txt)
 3. Khởi tạo thư mục theo cấu trúc bên dưới:
 
-   <img alt="Image" height="560" src="/repo_pmt_ws-fcj-003/images/2/1/21-01.png" width="280"/>
+   ![Image](/repo_pmt_ws-fcj-003/images/2/1/21-01.png)
 
 4. Thiết lập thư mục đồng bộ với docker container
 
